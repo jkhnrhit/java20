@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/rhit/java20/biz/SystemBiz.java=gbk
+encoding//src/main/java/com/rhit/java20/biz/impl/SystemBizImpl.java=gbk
+encoding//src/main/java/com/rhit/java20/dao/CourseDao.java=gbk
+encoding//src/main/java/com/rhit/java20/dao/SqlProvider.java=gbk
+encoding//src/main/java/com/rhit/java20/dao/TeacherDao.java=gbk
+encoding//src/main/java/com/rhit/java20/entity/Course.java=gbk
+encoding//src/main/java/com/rhit/java20/entity/PageVo.java=gbk
+encoding//src/main/java/com/rhit/java20/web/CourseController.java=gbk
+encoding//src/main/java/com/rhit/java20/web/TeacherController.java=gbk
+encoding//src/main/java/com/rhit/java20/web/TestController.java=gbk
+separateDerivedEncodings=true

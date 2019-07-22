@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rhit.java20.dao">
+
+
+	<resultMap type="Teacher" id="TeacherMap">
+		<id column="tno" property="tno" />
+		<result column="tname" property="tname" />
+		<result column="tsex" property="tsex" />
+		<result column="tbirthday" property="tbirthday" />
+		<result column="prof" property="prof" />
+		<result column="depart" property="depart" />
+
+
+	</resultMap>
+
+
+	<!-- 新方式 -->
+	<resultMap type="Course" id="CourseMap1">
+		<id column="cno" property="cno" />
+		<result column="cname" property="cname" />
+		<!-- <result column="tno" property="tno" /> -->
+		<!-- 处理多对一 -->
+		<association property="teacher" javaType="Teacher"
+			resultMap="TeacherMap1"></association>
+
+	</resultMap>
+
+	<resultMap type="Teacher" id="TeacherMap1">
+		<id column="tno" property="tno" />
+		<result column="tname" property="tname" />
+		<result column="tsex" property="tsex" />
+		<result column="tbirthday" property="tbirthday" />
+		<result column="prof" property="prof" />
+		<result column="depart" property="depart" />
+		<!-- 配置一对多 -->
+		<collection property="clist" resultMap="CourseMap1"></collection>
+
+	</resultMap>
+</mapper>
+
